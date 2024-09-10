@@ -1,8 +1,8 @@
-## Global Electronics Retailer Dashboard
-
 [Click **HERE** to view the dashboard on my **NovyPro** account](https://project.novypro.com/9OXJcX)
 
-A dashboard I made in PowerBI, based on the dataset [Global Electronics Retailer from Maven Analytics](https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&search=global%20elec). Here are some thoughts and takeaways from the project:
+A dashboard I made in PowerBI, based on the dataset [Global Electronics Retailer from Maven Analytics](https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&search=global%20elec). 
+
+## Project Notes
 
 Starting with the schema, I used the existing [Sales] table as the facts table, with the remaining tables being dimension tables, and created a date table in PowerQuery in M:
 ```
