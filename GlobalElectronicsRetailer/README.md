@@ -12,7 +12,6 @@ As per usual, I tried to do as many of the preliminary transformations as I coul
 
 I got to practice some DAX with Time Intelligence functions, for example to calculate the number of Recent Customers in the previous month:
 ```
-RecentCustomersThisMonth = CALCULATE(DISTINCTCOUNT(Sales[CustomerKey]),Sales[CustomerCategory] = "Recent", DATESMTD(DATEADD(DateTable[Date],0,MONTH)))
 RecentCustomersLastMonth = CALCULATE(DISTINCTCOUNT(Sales[CustomerKey]),Sales[CustomerCategory] = "Recent", DATESMTD(DATEADD(DateTable[Date],-1,MONTH)))
 ```
 Speaking of recent customers, in order to explore customer churn, I arbitrarily divided the Customer Key field in [Sales] into 3 groups:
