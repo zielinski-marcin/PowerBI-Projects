@@ -20,7 +20,7 @@ Speaking of recent customers, in order to explore customer churn, I arbitrarily 
 - **Recent**: a customer who's made a previous order within the preceeding 90 days,
 - **Recovered**: a customer who's previous order was over 90 days ago.
 
-I considered a few ways of achieving that, eventually settling on a calculated DAX column in the [Sales] table:
+I considered a few ways of achieving this, eventually reluctantly settling on a calculated DAX column in the [Sales] table:
 ```
 CustomerCategory = VAR X = DATEDIFF(
                               CALCULATE(MAX(Sales[Order Date]),
