@@ -8,7 +8,7 @@ Starting with the schema, I used the existing [Sales] table as the facts table, 
 ```
 DateTable = List.Dates(#date(2016,01,01),365*5+54,#duration(1,0,0,0))
 ```
-![Schema](GlobalElectronicsRetailer_Schema.png.png)
+![Schema](GlobalElectronicsRetailer_Schema.png)
 
 As per usual, I tried to do as many of the preliminary transformations as I could in PowerQuery. For example, I added a column to calculate the Delivery Time for Online sales, joined the [Exchange_Rates] to [Sales] to accomodate different currencies, etc.
 
