@@ -34,3 +34,5 @@ RETURN
     ParetoHours / TotalHours
 ```
 Then I used the Pareto% measure in a *line and stacked column chart* for the line values, and the sum of downtime (in hours) for the column values. The resulting Pareto chart allows the user to identify the 5 factors responsible for 80% of downtime at a glance.
+### Insights
+I added an "Insights" button in the upper right corner of the report. It takes advantage of bookmarks to display textboxes with some key takeaways from the dataset.
